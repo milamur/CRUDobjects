@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Class name:</strong>
+  <%= @online.class_name %>
+</p>
+
+<p>
+  <strong>Assignments:</strong>
+  <%= @online.assignments %>
+</p>
+
+<p>
+  <strong>Hours per week:</strong>
+  <%= @online.hours_per_week %>
+</p>
+
+</div>
+<div id="todo_items_wrapper">
+  <h2> Students Listed Below</h2>
+ <%= render @online.students %>
+ <hr />
+ <h2>Add Student</h2>
+ <div id="form">
+  <%= render "students/form" %>
+ </div>
+</div>
+
+<%= link_to 'Edit', edit_online_path(@online) %> |
+<%= link_to 'Back', onlines_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  class_name: MyString
+  assignments: false
+  hours_per_week: 1
+
+two:
+  class_name: MyString
+  assignments: false
+  hours_per_week: 1

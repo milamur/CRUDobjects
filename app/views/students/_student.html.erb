@@ -1,0 +1,11 @@
+<div class="content">
+    <p>
+        Name: <%= student.name %>
+        <br>
+        Email: <%= student.email%>
+        <br>
+        
+        Present: <%= student.here%>
+    </p>
+    <%= link_to "Remove", online_student_path(@online, student.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
